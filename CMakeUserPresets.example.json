@@ -21,59 +21,59 @@
     }, {
         "name": "local",
         "inherits": [ "debug", "local-base_", "local-debug_", "local-inner_", "local-error_" ],
-        "displayName": "Local Debug Inner Error",
+        "displayName": "Local Debug Inner Error config",
         "binaryDir": "${sourceDir}/temp/presets_/local",
         "cacheVariables": { "CMAKE_CXX_FLAGS": "$env{APP_DEBUG} $env{APP_INNER} $env{APP_ERROR}" }
     }, {
         "name": "local-flash",
         "inherits": [ "flash", "local-base_", "local-inner_", "local-error_" ],
-        "displayName": "Local Flash Inner Error",
+        "displayName": "Local Flash Inner Error config",
         "binaryDir": "${sourceDir}/temp/presets_/local-flash",
         "cacheVariables": { "CMAKE_CXX_FLAGS": "$env{APP_INNER} $env{APP_ERROR}" }
     }, {
         "name": "local-flash-outer",
         "inherits": [ "flash", "local-base_", "local-error_" ],
-        "displayName": "Local Flash Outer Error",
+        "displayName": "Local Flash Outer Error config",
         "binaryDir": "${sourceDir}/temp/presets_/local-flash-outer",
         "cacheVariables": { "CMAKE_CXX_FLAGS": "$env{APP_ERROR}" }
     }, {
         "name": "local-outer",
         "inherits": [ "debug", "local-base_", "local-debug_", "local-error_"  ],
-        "displayName": "Local Debug Outer Error",
+        "displayName": "Local Debug Outer Error config",
         "binaryDir": "${sourceDir}/temp/presets_/local-outer",
         "cacheVariables": { "CMAKE_CXX_FLAGS": "$env{APP_DEBUG} $env{APP_ERROR}" }
     }, {
         "name": "local-outer-valid",
         "inherits": [ "debug", "local-base_", "local-debug_" ],
-        "displayName": "Local Debug Outer Valid",
+        "displayName": "Local Debug Outer Valid config",
         "binaryDir": "${sourceDir}/temp/presets_/local-outer-valid",
         "cacheVariables": { "CMAKE_CXX_FLAGS": "$env{APP_DEBUG}" }
     }, {
         "name": "local-valid",
         "inherits": [ "debug", "local-base_", "local-debug_", "local-inner_" ],
-        "displayName": "Local Debug Inner Valid",
+        "displayName": "Local Debug Inner Valid config",
         "binaryDir": "${sourceDir}/temp/presets_/local-valid",
         "cacheVariables": { "CMAKE_CXX_FLAGS": "$env{APP_DEBUG} $env{APP_INNER}" }
     }, {
         "name": "local-valid-flash",
         "inherits": [ "flash", "local-base_", "local-inner_" ],
-        "displayName": "Local Flash Inner Valid",
+        "displayName": "Local Flash Inner Valid config",
         "binaryDir": "${sourceDir}/temp/presets_/local-valid-flash",
         "cacheVariables": { "CMAKE_CXX_FLAGS": "$env{APP_INNER}" }
     }, {
         "name": "local-void",
         "inherits": [ "flash", "local-base_" ],
-        "displayName": "Local Flash Outer Valid",
+        "displayName": "Local Flash Outer Valid config",
         "binaryDir": "${sourceDir}/temp/presets_/local-void"
     }],
     "buildPresets": [
-        { "name": "local", "configurePreset": "local" },
-        { "name": "local-flash", "configurePreset": "local-flash" },
-        { "name": "local-flash-outer", "configurePreset": "local-flash-outer" },
-        { "name": "local-outer", "configurePreset": "local-outer" },
-        { "name": "local-outer-valid", "configurePreset": "local-outer-valid" },
-        { "name": "local-valid", "configurePreset": "local-valid" },
-        { "name": "local-valid-flash", "configurePreset": "local-valid-flash" },
-        { "name": "local-void", "configurePreset": "local-void" }
+        { "name": "local", "displayName": "Local build", "configurePreset": "local" },
+        { "name": "local-flash", "displayName": "Local Flash build", "configurePreset": "local-flash" },
+        { "name": "local-flash-outer", "displayName": "Local Flash Outer build", "configurePreset": "local-flash-outer" },
+        { "name": "local-outer", "displayName": "Local Outer build", "configurePreset": "local-outer" },
+        { "name": "local-outer-valid", "displayName": "Local Outer Valid build", "configurePreset": "local-outer-valid" },
+        { "name": "local-valid", "displayName": "Local Valid build", "configurePreset": "local-valid" },
+        { "name": "local-valid-flash", "displayName": "Local Valid Flash build", "configurePreset": "local-valid-flash" },
+        { "name": "local-void", "displayName": "Local Void build", "configurePreset": "local-void" }
     ]
 }
