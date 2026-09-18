@@ -5,13 +5,13 @@ app: `exemplar_cxx_program` C++17 Application Program Example
 Ⓒ Copyright (C) 2026 Oleg'Ease'Kharchuk ᦒ
 ----------------------------------------------------------------
 Commands
-        usage   : make [command]
-        cmake   : configure project default preset into build
-        ninja   : generate project default preset into build
-        build   : configure and generate project into build
-        debug   : configure and generate debug into temp
-        flash   : configure and generate release into temp
-        presets : copy user presets example
-        clean   : remove force recursively build directory
-        wipe-tmp: remove force recursively temp presets_ folder
+        usage   : make [command]                                ;
+        cmake   : configure project default preset into build   ;
+        ninja   : generate project default preset into build    ;
+        build   : configure and generate project into build     ;
+        debug   : configure and generate debug into temp        ;
+        flash   : configure and generate release into temp      ;
+        presets : copy user presets example if not exists       ;
+        clean   : remove force recursively build directory      ;
+        wipe-tmp: remove force recursively temp presets_ folder ;
 ================================================================

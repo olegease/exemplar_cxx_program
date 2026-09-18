@@ -27,8 +27,8 @@ flash:
 	@cmake --build --preset flash
 
 presets:
-	@echo "copy user presets example"
-	@cp CMakeUserPresets.example.json CMakeUserPresets.json
+	@echo "copy user presets example if not exists"
+	@cp -n CMakeUserPresets.example.json CMakeUserPresets.json
 
 clean:
 	@echo "cleaning build directory"
