@@ -3,3 +3,5 @@
 # ignore temporary folders andor files
 temp/
 temp.*
+# ignore cmake user presets
+CMakeUserPresets.json

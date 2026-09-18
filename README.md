@@ -1,5 +1,5 @@
-# `TEMPLATE`
-> Project Legend
+# `EXEMPLAR_CXX_PROGRAM`
+> C++17 Application Program Example
 
 Project Overview
 
