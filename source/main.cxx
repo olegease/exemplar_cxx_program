@@ -1,7 +1,7 @@
 #include <son8/exemplar_cxx_library.hxx>
 
 int main( ) {
-   return son8::exemplar_cxx_library::public_todo( );
+   return static_cast< int >( son8::exemplar_cxx_library::public_todo( ) );
 }
 
 // GNU Affero General Public License v3.0 or later
